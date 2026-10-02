@@ -1,0 +1,27 @@
+{
+  "name": "whistle.chaos",
+  "version": "1.0.0",
+  "description": "Chaos testing (fault injection) plugin for whistle, configurable fault rate, type, delay range, status code, etc.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "formatfa",
+  "keywords": [
+    "whistle",
+    "whistle-plugin",
+    "chaos",
+    "chaos-testing",
+    "fault-injection",
+    "testing"
+  ],
+  "whistleConfig": {},
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "node test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "typescript": "^5.9.2"
+  }
+}
